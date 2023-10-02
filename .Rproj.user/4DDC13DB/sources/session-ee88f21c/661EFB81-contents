@@ -1,0 +1,29 @@
+---
+title: "About"
+---
+
+This repository contains the code for formatting, processing, and analyzing the dataset **Monitoring data on the effect of domestic livestock and rabbits on** ***Androcymbium europaeum*** **pastures**. This dataset has been standardised according to GBIF specifications, and it's deposited in GBIF available at [doi:10.15470/jpjhuu](https://doi.org/10.15470/jpjhuu) and [here](https://www.gbif.org/dataset/340aff40-1745-4d49-bf2a-adb2899bc428). 
+
+Additionally, we have prepared a Data paper that is submitted to *Biodiveristy Data Journal*. 
+
+This work was funded by MICINN through European Regional Development Fund SUMHAL, LIFEWATCH-2019-09-CSIC-13, POPE 2014-2020. More info about the [SUMHAL project](https://lifewatcheric-sumhal.csic.es/) (Sustainability for Mediterranean Hotspots in Andalusia integrating LifeWatch ERIC).
+
+[CRedIT](https://credit.niso.org/) Statment (Contributor Roles Taxonomy):
+
+-   [**Antonio J. Pérez-Luque**](https://github.com/ajpelu) <a href="https://orcid.org/0000-0002-1747-0469" target="orcid.widget"> <img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" alt="ORCID logo" width="16" height="16"/></a>: Data curation, Methodology, Validation, Visualization, Software, Conceptualization. 
+-   **Maria Eugenia Ramos Font** <a href="https://orcid.org/0000-0002-4888-0401" target="orcid.widget"> <img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" alt="ORCID logo" width="16" height="16"/></a>:: Data curation, Methodology, Validation. 
+-   **Mauro J. Tognetti Barbieri**: Data curation, Methodology, Validation. 
+-   **Ana Belén Robles Cruz**: Conceptualization, Funding acquisition, Methodology, Project administration, Resources, Supervision, 
+
+### Cite 
+
+- To cite the dataset: 
+
+Pérez Luque A J, Ramos Font M E, Tognetti M J, Montoya Román C, Tribaldos Anda C, Robles Cruz A B (2023). Monitoring data on the effect of domestic livestock and rabbits on Androcymbium europaeum pastures. Version 2.1. Estación Experimental del Zaidín (CSIC). Sampling event dataset [https://doi.org/10.15470/jpjhuu](https://doi.org/10.15470/jpjhuu) accessed via GBIF.org on 2023-08-30.
+
+- To cite the repository: 
+
+Pérez Luque A J (2023). Formatting and processing the dataset Monitoring data on the effect of domestic livestock and rabbits on *Androcymbium europaeum* pastures from GBIF. v1.0. ajpelu.gitub.io/dp_androcymbium_lab 
+
+
+
