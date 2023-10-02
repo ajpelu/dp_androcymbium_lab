@@ -5,6 +5,14 @@ bibliography:
   - references.bib
   - grateful-refs.bib
 csl: journal-of-ecology.csl
+citation:
+  citation-label: "PerezLuque2023"
+  type: report
+  author: "Pérez-Luque A.J." 
+  title: "Download and process the dataset Monitoring data on the effect of domestic livestock and rabbits on Androcymbium europaeum pastures from GBIF" 
+  url: "https://ajpelu.github.io/dp_androcymbium_lab/"
+  issued: "2023-09-01"
+  version: "v1"
 ---
 
 
@@ -35,7 +43,7 @@ A randomized block design was followed, and consisted of 6 blocks separated betw
 
 ### Abundance of Androcymbium europaeum
 The density of *A. europaeum* in each plot was yearly evaluated by counting the number of
-individuals in 50 cm x 50 cm fix squares, taking four squares per plot, distributed according
+individuals in 50 cm x 50 cm fixed squares, taking four squares per plot, distributed according
 to the four cardinal points (N, S, E and W): 24 squares per treatment (six blocks by four squares)(@fig-sampling). The exclusion plots were installed in May 2010, after the first density
 and biodiversity samplings (March and April), thus this year should be considered as year
 zero, without exclusion treatments.
@@ -43,16 +51,20 @@ zero, without exclusion treatments.
 ![Sampling plots. In each plot (2.5 x 2.5m), there were set 4 quadrat count (50x50 cm) and 2 transect lines (2m).](images/sampling.png){#fig-sampling}
 
 ### Assesment of plant communities
-The evaluation of plant communities where *A. europaeum* lives was conducted annually during the spring season to ensure that most annual species had grown and flowered, allowing for accurate identification. In each plot, two fixed cross transects measuring 2 meters in length were established (@fig-sampling). The point-intercept method [@Elzingaetal2001MonitoringPlant] was employed, with 50 points surveyed per transect. These points were spaced 4 cm apart, and the plant species in contact with a 2 mm needle were recorded. For each transect the following variables were determined:
+The evaluation of plant communities where *A. europaeum* lives was conducted annually during the spring season to ensure that most annual species had grown and flowered, allowing for accurate identification. In each plot, the point-intercept (non-destructive) method was applied, following a modification proposed by @Daget1971 of the point-quadrat method originally described by @Levy1933. Two fixed crossed transects measuring 2 meters in length were established (@fig-sampling), with 50 points surveyed per transect. These points were spaced 4 cm apart, and the plant species in contact with a 2 mm needle were recorded. For each transect the following variables were determined:
 
-- specific vegetation cover: percentage of soil covered by each plant species
-- plant species richness: number of species
-- Shannon diversity index $\text{H'} = -\sum p_i \cdot \ln(p_i)$
-- vegetation cover: percentage of soil covered by vegetation
-- total specific cover: sum of the specific vegetation cover of each species 
-- musk/lichen cover: percentage of soil covered by musk or lichen
-- bare soil cover: percentage of bare soil
+- Coverages:
+  
+  - specific plant cover: percentage of soil covered by each plant species
+  - vegetation cover: percentage of soil covered by vegetation
+  - total specific plant cover: sum of the specific vegetation cover of each species
+  - musk/lichen cover: percentage of soil covered by musk or lichen
+  - bare soil cover: percentage of bare soil
 
+- Floristic composition:
+  
+  - plant species richness: number of species
+  - Shannon diversity index (H'): $\text{H'} = -\sum p_i \cdot \ln(p_i)$ where $p_i$ is the proportion of individuals of one particular species found divided by the total number of individuals found.
 
 # GBIF Dataset Structure
 Before diving into data processing, it's important to understand the structure of the dataset. Our dataset was accomodated to the Darwin Core Archive (DwC-A) using the sampling-event data type [@gbif_event], following the structure of files of the @fig-dwca. 
@@ -388,7 +400,6 @@ At this point, we have successfully extracted, processed, and organized the data
 
 ```{r}
 #| echo: false
-#| results: asis
 library(grateful)
 grateful::cite_packages(output = "paragraph", out.dir = ".")
 ```
